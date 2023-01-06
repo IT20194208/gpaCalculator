@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>for IT student gpa calculator</title>
+
+        <style>
+        #customers {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+          }
+          
+          #customers td, #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+          }
+          
+          #customers tr:nth-child(even){background-color: #f2f2f2;}
+          
+          #customers tr:hover {background-color: #ddd;}
+          
+          #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #04AA6D;
+            color: white;
+          }
+          .topic{
+            text-align: center;
+            font-family: monospace;
+            font-style: italic;
+          }
+          .btn{
+            padding: 10px 10px 10px 10px;
+            margin-top: 20px;
+            border-radius: 5px;
+            outline: none;
+            border: 1px solid black;
+
+          }
+          .btn:hover{
+            cursor: pointer;
+            color: #ffff;
+            background-color: #04AA6D;
+            border: 2px solid #ffff;
+            padding: 10px 12px 10px 12px;
+          }
+          .box{
+            padding: 5px 5px 5px 5px;
+            border-radius: 5px;
+            outline: none;
+            border: 2px solid rgb(44, 195, 92);
+            text-align: center;
+          }
+          .selectBox{
+
+            border: 2px solid rgb(44, 195, 92);
+            border-radius: 5px;
+            padding: 4px;
+
+          }
+          #answer{
+            width: 100px;
+            height: 50px;
+            border: 2px solid  rgb(44, 195, 92);
+            margin-top: 20px;
+            padding:0px 20px 0px 10px;
+            border-radius: 5px;
+            text-align: center;
+            background-color: #04AA6D;
+            color: #ffff;
+            font-weight: 300;
+          }
+          body{
+            background-image: url(back.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+          }
+          </style>
+
+    </head>
+<body>
+
+    <h1 class="topic">----GPA calculator for IT students 3rd year first sem----</h1>
+    <form>
+        <table border="1" id="customers">
+            <tr>
+                <th>module</th>
+                <th>credit</th>
+                <th>grade</th>
+            </tr>
+            <!------------------------------subject 1----------------------------->
+            <tr>
+                <td>IT 3090	Business Management for IT</td>
+                <td><input type="number" id="credit1" value="3" class="box"></td>
+                <td>
+                    <select id="grade1" class="selectBox">
+
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="B-">B-</option>
+                        <option value="C+">C+</option>
+                        <option value="C">C</option>
+                        <option value="C-">C-</option>
+                        <option value="D+">D+</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="R">R</option>
+
+                   </select>
+            </td>
+            </tr>
+            <!----------------------------------subject2------------------------------------->
+            <tr>
+                <td>IT 3080	Data Sceince & Analytics</td>
+                <td><input type="number" id="credit2" value="4" class="box"></td>
+                <td>
+                    <select id="grade2" class="selectBox">
+
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="B-">B-</option>
+                        <option value="C+">C+</option>
+                        <option value="C">C</option>
+                        <option value="C-">C-</option>
+                        <option value="D+">D+</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="R">R</option>
+
+                   </select>
+            </td>
+            </tr>
+            <!-----------------------subject 3-------------------------------->
+            <tr>
+                <td>IT 3070	Information Assurance & Security</td>
+                <td><input type="number" id="credit3" value="4" class="box"></td>
+                <td>
+                    <select id="grade3" class="selectBox">
+
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="B-">B-</option>
+                        <option value="C+">C+</option>
+                        <option value="C">C</option>
+                        <option value="C-">C-</option>
+                        <option value="D+">D+</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="R">R</option>
+
+                   </select>
+            </td>
+            </tr>
+            <!-----------------------subject 4-------------------------------->
+            <tr>
+                <td>IT 3060	Human Computer Interaction</td>
+                <td><input type="number" id="credit4" value="4" class="box"></td>
+                <td>
+                    <select id="grade4" class="selectBox">
+
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="B-">B-</option>
+                        <option value="C+">C+</option>
+                        <option value="C">C</option>
+                        <option value="C-">C-</option>
+                        <option value="D+">D+</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="R">R</option>
+
+                   </select>
+                  
+            </td>
+            
+            </tr>
+         
+        </table>
+        <input type="button" class="btn" value="Calculate GPA" onclick="MyFunction()">
+    </form>
+   <div id="answer">
+
+   </div>
+  <script>
+
+    function MyFunction(){
+       // alert("hey dear");
+       //get all credits//
+       var credit1=document.getElementById("credit1").value;
+       credit1=parseFloat(credit1);
+
+       var credit2=document.getElementById("credit2").value;
+       credit2=parseFloat(credit2);
+
+       var credit3=document.getElementById("credit3").value;
+       credit3=parseFloat(credit3);
+
+       var credit4=document.getElementById("credit4").value;
+       credit4=parseFloat(credit4);
+
+      //get all grades//
+      //grade number 1 bmit module//
+
+      var grade1=document.getElementById("grade1");
+      var a=grade1.options[grade1.selectedIndex].value;
+
+      //grade number 2 DS & A module//
+
+      var grade2=document.getElementById("grade2");
+      var b=grade2.options[grade2.selectedIndex].value;
+
+      //grade number 3 IT 3070	Information Assurance & Security module//
+
+      var grade3=document.getElementById("grade3");
+      var c=grade3.options[grade3.selectedIndex].value;
+
+      //grade number 4 HCI module//
+
+      var grade4=document.getElementById("grade4");
+      var d=grade4.options[grade4.selectedIndex].value;
+
+      var FinalGrade1;
+      var FinalGrade2;
+      var FinalGrade3;
+      var FinalGrade4;
+      var gpa1;
+      var gpa2;
+      var gpa3;
+      var gpa4;
+
+      if(a==="A+"){
+
+        FinalGrade1=a;
+        gpa1=4.00;
+
+       // alert(FinalGrade);
+
+      }
+      else if(a==="A"){
+        FinalGrade1=a;
+        gpa1=4.00;
+       // alert(FinalGrade);
+
+      }
+      else if(a==="A-"){
+
+        FinalGrade1=a;
+        gpa1=3.70;
+       // alert(FinalGrade);
+
+      }
+      else if(a==="B+"){
+
+        FinalGrade1=a;
+        gpa1=3.30;
+        //alert(FinalGrade);
+
+      }
+      else if(a==="B"){
+
+        FinalGrade1=a;
+        gpa1=3.00;
+        //alert(FinalGrade);
+
+      }
+      else if(a==="B-"){
+
+        FinalGrade1=a;
+        gpa1=2.70;
+       // alert(FinalGrade);
+
+      }
+      else if(a==="C+"){
+        FinalGrade1=a;
+        gpa1=2.30;
+       // alert(FinalGrade);
+
+      }
+      else if(a==="C"){
+        FinalGrade1=a;
+        gpa1=2.00;
+        //alert(FinalGrade);
+
+      }
+      else if(a==="C-"){
+        FinalGrade1=a;
+        gpa1=1.70;
+       // alert(FinalGrade);
+
+      }
+      else if(a==="D+"){
+        FinalGrade1=a;
+        gpa1=1.30;
+       // alert(FinalGrade);
+
+      }
+      else if(a==="D"){
+        FinalGrade1=a;
+        gpa1=1.00;
+       // alert(FinalGrade);
+
+      }
+      else if(a==="E"){
+        FinalGrade1=a;
+        gpa1=0.00;
+       // alert(FinalGrade);
+
+      }
+      else{
+
+        FinalGrade1="R";
+        gpa1=0.00;
+       // alert(FinalGrade);
+
+      }
+   
+    //--------------------------------------------module 2----------------------------------------//
+
+            
+        if(b==="A+"){
+
+        FinalGrade2=b;
+        gpa2=4.00;
+        // alert(FinalGrade);
+
+        }
+        else if(b==="A"){
+        FinalGrade2=b;
+        gpa2=4.00;
+        // alert(FinalGrade);
+
+        }
+        else if(b==="A-"){
+
+        FinalGrade2=b;
+        gpa2=3.70;
+        // alert(FinalGrade);
+
+        }
+        else if(b==="B+"){
+
+        FinalGrade2=b;
+        gpa2=3.30;
+        //alert(FinalGrade);
+
+        }
+        else if(b==="B"){
+
+        FinalGrade2=b;
+        gpa2=3.00;
+        //alert(FinalGrade);
+
+        }
+        else if(b==="B-"){
+
+        FinalGrade2=b;
+        gpa2=2.70;
+        // alert(FinalGrade);
+
+        }
+        else if(b==="C+"){
+        FinalGrade2=b;
+        gpa2=2.30;
+        // alert(FinalGrade);
+
+        }
+        else if(b==="C"){
+        FinalGrade2=b;
+        gpa2=2.00;
+        //alert(FinalGrade);
+
+        }
+        else if(b==="C-"){
+        FinalGrade2=b;
+        gpa2=1.70;
+        // alert(FinalGrade);
+
+        }
+        else if(b==="D+"){
+        FinalGrade2=b;
+        gpa2=1.30;
+        // alert(FinalGrade);
+
+        }
+        else if(b==="D"){
+        FinalGrade2=b;
+        gpa2=1.00;
+        // alert(FinalGrade);
+
+        }
+        else if(b==="E"){
+        FinalGrade2=b;
+        gpa2=0.00;
+        // alert(FinalGrade);
+
+        }
+        else{
+
+        FinalGrade2="R";
+        gpa2=0.00;
+        // alert(FinalGrade);
+
+        }
+       //---------------------------------------module3--------------------------------//
+
+        if(c==="A+"){
+
+        FinalGrade3=c;
+        gpa3=4.00;
+        // alert(FinalGrade);
+
+        }
+        else if(c==="A"){
+        FinalGrade3=c;
+        gpa3=4.00;
+        // alert(FinalGrade);
+
+        }
+        else if(c==="A-"){
+
+        FinalGrade3=c;
+        gpa3=3.70;
+        // alert(FinalGrade);
+
+        }
+        else if(c==="B+"){
+
+        FinalGrade3=c;
+        gpa3=3.30;
+        //alert(FinalGrade);
+
+        }
+        else if(c==="B"){
+
+        FinalGrade3=c;
+        gpa3=3.00;
+        //alert(FinalGrade);
+
+        }
+        else if(c==="B-"){
+
+        FinalGrade3=c;
+        gpa3=2.70;
+        // alert(FinalGrade);
+
+        }
+        else if(c==="C+"){
+        FinalGrade3=c;
+        gpa3=2.30;
+        // alert(FinalGrade);
+
+        }
+        else if(c==="C"){
+        FinalGrade3=c;
+        gpa3=2.00;
+        //alert(FinalGrade);
+
+        }
+        else if(c==="C-"){
+        FinalGrade3=c;
+        gpa3=1.70;
+        // alert(FinalGrade);
+
+        }
+        else if(c==="D+"){
+        FinalGrade3=c;
+        gpa3=1.30;
+        // alert(FinalGrade);
+
+        }
+        else if(c==="D"){
+        FinalGrade3=c;
+        gpa3=1.00;
+        // alert(FinalGrade);
+
+        }
+        else if(c==="E"){
+        FinalGrade3=c;
+        gpa3=0.00;
+        // alert(FinalGrade);
+
+        }
+        else{
+
+        FinalGrade3="R";
+        gpa3=0.00;
+        // alert(FinalGrade);
+
+        }
+
+        //---------------------------------------module4--------------------------------//
+
+        if(d==="A+"){
+
+        FinalGrade4=d;
+        gpa4=4.00;
+        // alert(FinalGrade);
+
+        }
+        else if(d==="A"){
+        FinalGrade4=d;
+        gpa4=4.00;
+        // alert(FinalGrade);
+
+        }
+        else if(d==="A-"){
+
+        FinalGrade4=d;
+        gpa4=3.70;
+        // alert(FinalGrade);
+
+        }
+        else if(d==="B+"){
+
+        FinalGrade4=d;
+        gpa4=3.30;
+        //alert(FinalGrade);
+
+        }
+        else if(d==="B"){
+
+        FinalGrade4=d;
+        gpa4=3.00;
+        //alert(FinalGrade);
+
+        }
+        else if(d==="B-"){
+
+        FinalGrade4=d;
+        gpa4=2.70;
+        // alert(FinalGrade);
+
+        }
+        else if(d==="C+"){
+        FinalGrade4=d;
+        gpa4=2.30;
+        // alert(FinalGrade);
+
+        }
+        else if(d==="C"){
+        FinalGrade4=d;
+        gpa4=2.00;
+        //alert(FinalGrade);
+
+        }
+        else if(d==="C-"){
+        FinalGrade4=d;
+        gpa4=1.70;
+        // alert(FinalGrade);
+
+        }
+        else if(d==="D+"){
+        FinalGrade4=d;
+        gpa4=1.30;
+        // alert(FinalGrade);
+
+        }
+        else if(d==="D"){
+        FinalGrade4=d;
+        gpa4=1.00;
+        // alert(FinalGrade);
+
+        }
+        else if(d==="E"){
+        FinalGrade4=d;
+        gpa4=0.00;
+        // alert(FinalGrade);
+
+        }
+        else{
+
+        FinalGrade4="R";
+        gpa4=0.00;
+        // alert(FinalGrade);
+
+        }
+
+       // alert(gpa4);
+
+       var TotalCredit=credit1+credit2+credit3+credit4;//15
+      
+       
+       var num1=credit1*gpa1;
+       var num2=credit2*gpa2;
+       var num3=credit3*gpa3;
+       var num4=credit4*gpa4;
+
+       var TotalValue=num1+num2+num3+num4;
+
+       var result=TotalValue/TotalCredit;
+     //  alert(result);
+
+     if(!isNaN(result)){
+        document.getElementById("answer").innerHTML="My GPA is:"+result
+     }
+
+      
+      
+       // var select=document.getElementById("grade1");
+       // alert(select.options[select.selectedIndex].value);
+
+    }//end of function//
+    
+    
+
+  </script>
+
+
+</body>
+</html>
